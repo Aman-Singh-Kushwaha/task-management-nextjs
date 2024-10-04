@@ -43,7 +43,7 @@ export default function CreateTaskPage() {
         title: "Task created successfully",
         description: `Task ID: ${result._id}`,
       })
-      router.push("/") 
+      router.back() 
     } catch (error) {
       toast({
         title: "Submit Error",

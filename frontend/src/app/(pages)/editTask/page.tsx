@@ -69,7 +69,7 @@ export default function EditTaskPage() {
         title: "Task updated successfully",
         description: `Task ID: ${taskId}`,
       })
-      router.push("/") // Redirect to dashboard or task list
+      router.back()
     } catch (error) {
       toast({
         title: "Submit Error",
